@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>Stat Calculator!</title>
+            <script src="script.js"></script>
+            <link rel="stylesheet" type="text/css" href="../css/site.css">
+        </head>
+        <style>
+            a:hover {
+                font-size:100%;
+            }
+            
+            p {
+                font-weight:bold;
+                text-decoration:underline;
+            }
+        </style>
+        <body>
+            <h2>Statistical Calculator</h2>
+            
+            Enter Numbers:<br> <textarea name="arr" id="arr" required></textarea> <br>
+            <button type="button" id="calculate" value="Calculate" onClick="performStatistics()">Calculate</button>
+            <input type="button" id="reset" value="Reset" onclick="reset()"><br><br>
+    
+            Minimum: <input type="text" name="min" id="min" readonly><br>
+            Maximum: <input type="text" name="max" id="max" readonly><br>
+            Sum: <input type="text" name="sum" id="sum" readonly><br>
+            Mean: <input type="text" name="mean" id="mean" readonly><br>
+            Median: <input type="text" name="median" id="median" readonly><br>
+            Mode: <input type="text" name="mode" id="mode" readonly><br>
+            Standard Deviation: <input type="text" name="stdDev" id="stdDev" readonly><br>
+            Variance: <input type="text" name="variance" id="variance" readonly><br>
+
+            <a href="../index.html" class="bottom-link">ePortfolio</a>
+        </body>
+    </html>
